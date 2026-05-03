@@ -3,10 +3,9 @@ import Button from "../components/Button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-    {href: "#about", label: "About"},
-    {href: "#projects", label: "Projects"},
-    {href: "#experience", label: "Experience"},
-    {href: "#testimonials", label: "Testimonials"},
+    {href: "#about", label: "À propos"},
+    {href: "#projects", label: "Projets"},
+    {href: "#experience", label: "Expérience"},
 ]
 
 const Navbar = () => {
@@ -28,7 +27,7 @@ const Navbar = () => {
             ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a>
-                    Portfolio <span>Cesto William</span>
+                    <span>Cesto William</span>
                 </a>
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">
@@ -41,7 +40,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:block">
-                    <Button size="sm">Contactez-moi</Button>
+                    <a href="#contact"><Button size="sm">Contactez-moi</Button></a>
                 </div>
 
                 <button

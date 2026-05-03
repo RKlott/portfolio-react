@@ -5,7 +5,9 @@ import { About } from "./section/About";
 import { Contact } from "./section/Contact";
 import { Experience } from "./section/Experience";
 import { Projects } from "./section/Projects";
-import { Testimonials } from "./section/Testimonials";
+import { Footer } from "./layout/Footer";
+
+
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
         <Hero />
         <Projects />
         <Experience />
-        <Testimonials />
         <About />
         <Contact />
+        <Footer />
       </main>
       
     </div>

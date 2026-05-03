@@ -83,7 +83,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800">
-                Mes salutations, je suis William Cesto - J'exploite pleinement ma passion en vous proposant des solutions digitales adaptées à vos besoins.
+                Mes salutations, je m'appelle William Cesto - Je mets ma passion pleinement à votre profit en vous proposant des solutions digitales adaptées à vos besoins.
               </p>
             </div>
 
@@ -99,19 +99,28 @@ export const Hero = () => {
             </div>
 
             {/* Réseaux Sociaux */}
-            <div className="flex items-center-gap-4 animate-fade-in animation-delay-400">
-                <span className="text-sm text-muted-foreground">Suivez-moi :</span>
+             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+                <span className="text-sm text-muted-foreground">
+                  Suivez-moi :{" "}
+                </span>
                 {[
-                    {icon: BsGithub, href: "https://github.com/RKlott"},
-                    {icon: LiaLinkedin, href: "https://www.linkedin.com/in/wc7"},
+                  { icon: BsGithub, href: "https://github.com/RKlott" },
+                  {
+                    icon: LiaLinkedin,
+                    href: "https://www.linkedin.com/in/wc7/",
+                  },
 
-                ].map((social, i) => {
-                    <a key={i} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
-                        {<social.icon className="w-5 h-5"/>}
-                    </a>
-                })}
+                ].map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.href}
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
+                    {<social.icon className="w-5 h-5" />}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
           {/* Colonne de droite image de profil */}
           <div className="relative animate-fade-in animation-delay-300">
             <div className="relative max-w-md mx-auto">

@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0f1418;
-  --color-foreground: #f0f2f5;
+  /* Fond très sombre avec une pointe de violet minuit */
+  --color-background: #0d0a16; 
+  /* Texte principal légèrement violacé pour l'harmonie */
+  --color-foreground: #f4f2fa;
 
-  --color-card: #141a1f;
+  /* Cartes un peu plus claires pour le relief */
+  --color-card: #151124;
 
-  --color-primary: #20b2a6;
+  /* Violet principal (Améthyste électrique) */
+  --color-primary: #8b5cf6; 
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #1f2830;
-  --color-secondary-foreground: #20b2a6;
+  /* Secondaire : un violet sombre et sourd pour les boutons/badges */
+  --color-secondary: #1e1932;
+  --color-secondary-foreground: #c4b5fd;
 
-  --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
+  /* Muted : pour les textes d'accompagnement */
+  --color-muted: #2a2440;
+  --color-muted-foreground: #94a3b8;
 
-  --color-border: #242b32;
+  /* Bordures : un violet profond pour rester discret mais structuré */
+  --color-border: #2e2849;
 
   --radius: 0.75rem;
 
+  /* Highlight : Un doré/ambre pour trancher radicalement avec le violet (complémentaire) */
   --color-highlight: #f5a623;
-  --color-surface: #1a2329;
+  /* Surface : pour les éléments flottants */
+  --color-surface: #1c1633;
 }
 
 @layer base {
