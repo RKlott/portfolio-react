@@ -88,10 +88,11 @@ export const Hero = () => {
             </div>
 
             <div className="flex gap-4">
+              <a href="#contact">
                 <Button 
-                href="#contact"
                 size="lg"
                 className="animate-fade-in animation-delay-800">Contactez-moi <ArrowRight className="w-5 h-5" /></Button>
+                </a>
                 <AnimatedBorderButton>
                     <Download className="w-5 h-3"/>
                     Download CV
